@@ -1,0 +1,84 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Audio samples from "Quasi-Fully Convolutional Neural Network with Variational Inference for Speech Synthesis"</title>
+    </head>
+    <body>
+      <article>
+        <header>
+          <h1>Audio samples from "Quasi-Fully Convolutional Neural Network with Variational Inference for Speech Synthesis"</h1>
+        </header>
+      </article>
+  
+      <div><b>Authors:</b> Mu Wang, Xixin Wu, Zhiyong Wu, Shiyin Kang, Deyi Tuo, Guangzhi Li, Dan Su, Dong Yu, Helen Meng </div>
+      <div><b>Abstract:</b> Recurrent neural networks,
+        such as gated recurrent units (GRUs) and long short-term memory (LSTM),
+        are widely used to on acoustic modeling for speech synthesis.
+        However, such sequential generating processes
+        are not friendly to today's massively parallel computing devices.
+        We introduce a fully convolutional neural network (CNN) model,
+        which can effiently run on parallel processers, for speech synthesis.
+        To improve the quality of the generated acoustic features,
+        we strengthen our model with variational inference.
+        We also use quasi-recurrent neural networks (QRNNs) to smoothen the generated acoustic features.
+        Finally, a high-quality parallel WaveNet model is used to generate audio samples.
+        Our contributions are two-fold.
+        First, we show that CNNs with variational inference can generate
+        highly natural speech on a par with end-to-end models;
+        the use of QRNNs further improves the synthetic quality by reducing trembling of generated acoustic features
+        and introduces very little runtime overheads.
+        Second, we show some techniques to further speed up the sampling process of the parallel WaveNet model.
+      </div>
+
+      <div>
+          <h3>Quasi-fully convolutional neural network with variational inference (QFCVI) VS. Tacotron</h3>
+          <table>
+              <tr><td class="transcript">“人是世间最独特的存在。人不是工具，而是对周遭环境的改变，对未知的探索。”</td></tr>
+              <tr><td>QFCVI - male speaker<br><audio controls><source src="demos/male/qfcvi/human.wav"></audio></td></tr>
+              <tr><td>Tacotron - male speaker<br><audio controls><source src="demos/male/taco/human.wav"></audio></td></tr>
+              <tr><td>QFCVI - female speaker<br><audio controls><source src="demos/female/qfcvi/human.wav"></audio></td></tr>
+              <tr><td>Tacotron - female speaker<br><audio controls><source src="demos/female/taco/human.wav"></audio></td></tr>
+          </table>
+          <br>
+
+          <table>
+              <tr><td class="transcript">“今天的演唱极为出色和美妙。”</td></tr>
+              <tr><td>QFCVI - male speaker<br><audio controls><source src="demos/male/qfcvi/yanchang.wav"></audio></td></tr>
+              <tr><td>Tacotron - male speaker<br><audio controls><source src="demos/male/taco/yanchang.wav"></audio></td></tr>
+              <tr><td>QFCVI - female speaker<br><audio controls><source src="demos/female/qfcvi/yanchang.wav"></audio></td></tr>
+              <tr><td>Tacotron - female speaker<br><audio controls><source src="demos/female/taco/yanchang.wav"></audio></td></tr>
+          </table>
+          <br>
+
+          <table>
+              <tr><td class="transcript">“去年十二月设立了对日投资促进会议。”</td></tr>
+              <tr><td>QFCVI - male speaker<br><audio controls><source src="demos/male/qfcvi/huiyi.wav"></audio></td></tr>
+              <tr><td>Tacotron - male speaker<br><audio controls><source src="demos/male/taco/huiyi.wav"></audio></td></tr>
+              <tr><td>QFCVI - female speaker<br><audio controls><source src="demos/female/qfcvi/huiyi.wav"></audio></td></tr>
+              <tr><td>Tacotron - female speaker<br><audio controls><source src="demos/female/taco/huiyi.wav"></audio></td></tr>
+          </table>
+          <br>
+
+          <table>
+              <tr><td class="transcript">“厨房里传来做菜的声音吱吱嚓嚓的,还飘来香气。”</td></tr>
+              <tr><td>QFCVI - male speaker<br><audio controls><source src="demos/male/qfcvi/chufang.wav"></audio></td></tr>
+              <tr><td>Tacotron - male speaker<br><audio controls><source src="demos/male/taco/chufang.wav"></audio></td></tr>
+              <tr><td>QFCVI - female speaker<br><audio controls><source src="demos/female/qfcvi/chufang.wav"></audio></td></tr>
+              <tr><td>Tacotron - female speaker<br><audio controls><source src="demos/female/taco/chufang.wav"></audio></td></tr>
+          </table>
+          <br>
+
+          <table>
+              <tr><td class="transcript">“葡萄美酒夜光杯，强身养颜紫玉美。宾主尽欢举座赞，芬芳馥郁醇正！”</td></tr>
+              <tr><td>QFCVI - male speaker<br><audio controls><source src="demos/male/qfcvi/putao.wav"></audio></td></tr>
+              <tr><td>Tacotron - male speaker<br><audio controls><source src="demos/male/taco/putao.wav"></audio></td></tr>
+              <tr><td>QFCVI - female speaker<br><audio controls><source src="demos/female/qfcvi/putao.wav"></audio></td></tr>
+              <tr><td>Tacotron - female speaker<br><audio controls><source src="demos/female/taco/putao.wav"></audio></td></tr>
+          </table>
+          <br>
+ 
+      </div>
+
+  </body>
+  </html>
+  
